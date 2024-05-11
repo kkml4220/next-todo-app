@@ -1,3 +1,4 @@
+import { SideMenu } from "@/components/SideMenu/SideMenu";
 import React from "react";
 
 export default function MainLayout({
@@ -7,7 +8,7 @@ export default function MainLayout({
 }>) {
   return (
     <div className="flex h-screen">
-      <div className="bg-indigo-300">Sidemenu</div>
+      <SideMenu />
       <main className="bg-red-300 flex-1 overflow-auto">{children}</main>
     </div>
   );
